@@ -12,7 +12,19 @@ export default defineConfig({
 
   // Useful for theme customization
   theme: {
-    extend: {},
+    extend: {
+      semanticTokens: {
+        colors: {
+          primary: {
+            50: { value: "{colors.sky.50}" },
+            100: { value: "{colors.sky.100}" },
+            200: { value: "{colors.sky.200}" },
+            /* 略 */
+            950: { value: "{colors.sky.950}" },
+          },
+        },
+      },
+    },
   },
 
   // The output directory for your css system
